@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin-top: 20px;
+        }
+        .img img{
+            width: 80px;
+            margin: 10px;
+            
+        }
+        .img img:hover{
+            border: solid blue;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .preview img{
+            width: 60%;
+            margin-top: 20px;
+            justify-items: center;
+            margin-left: 20%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>my images</div>
+    <div class="img">
+        <img onmouseover="preview.src=img1.src" name="img1" src="./img/img1.jpg" alt="">
+        <img onmouseover="preview.src=img2.src" name="img2" src="./img/img2.jpg" alt="">
+        <img onmouseover="preview.src=img3.src" name="img3" src="./img/img3.jpg" alt="">
+        <img onmouseover="preview.src=img4.src" name="img4" src="./img/img4.jpg" alt="">
+
+    </div>
+
+    <div class="preview">
+        <img name="preview" src="./img/img4.jpg" alt="">
+    </div>
+</body>
+</html>
